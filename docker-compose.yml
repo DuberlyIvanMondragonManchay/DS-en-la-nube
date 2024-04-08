@@ -46,4 +46,4 @@ networks:
 
 volumes:
     dbdata_mondragon:
-  node_modules: 
+    node_modules: 
