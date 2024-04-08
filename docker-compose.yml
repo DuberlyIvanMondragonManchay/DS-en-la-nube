@@ -26,7 +26,7 @@ services:
 
 
   db:
-    image: mongo:4.1.8-xenial
+    image: mongo
     container_name: db_dmondragon
     restart: unless-stopped
     env_file: .env
@@ -39,7 +39,7 @@ services:
       - app-network_dmondragon
 
 networks:
-  app-network:
+    app-network_dmondragon:
     driver: bridge
 
 volumes:
