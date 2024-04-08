@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: dmondragon
+    image: nodejs
     container_name: dmondragon
     restart: unless-stopped
     env_file: .env
@@ -23,7 +23,6 @@ services:
     networks:
       - app-network-mondragon
     command: ./wait-for.sh db:27017 -- /home/node/app/node_modules/.bin/nodemon app.js
-
 
   db:
     image: mongo
