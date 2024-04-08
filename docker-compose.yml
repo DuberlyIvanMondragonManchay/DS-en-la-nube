@@ -37,7 +37,7 @@ services:
       - dbdata-mondragon:/data/db
     networks:
         default:
-            name: existing_docker_network
+            name: app-network_mondragon
 networks:
     app-network_mondragon:
         driver: bridge
