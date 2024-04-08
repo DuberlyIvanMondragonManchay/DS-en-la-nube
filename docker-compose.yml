@@ -1,4 +1,4 @@
-version: '3'
+version: '3-8'
 
 services:
   nodejs:
@@ -36,9 +36,9 @@ services:
     volumes:     
       - dbdata-mondragon:/data/db
     networks:
-      - app-network_mondragon
+      - app-network-mondragon
 networks:
-    app-network_mondragon:
+    app-network-mondragon:
         driver: bridge
 
 volumes:
