@@ -42,5 +42,5 @@ networks:
         driver: bridge
 
 volumes:
-    dbdata_mondragon:
+    dbdata-mondragon:
     node_modules: 
