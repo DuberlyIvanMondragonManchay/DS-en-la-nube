@@ -15,8 +15,15 @@
     "express"
   ],
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongoose": "^5.4.10"
+    "mongoose": "^5.4.10",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon app.js"
   }
 }
