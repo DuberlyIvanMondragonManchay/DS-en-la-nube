@@ -38,8 +38,6 @@ services:
     networks:
         default:
             name: existing_docker_network
-            external: true
-
 networks:
     app-network_mondragon:
         driver: bridge
