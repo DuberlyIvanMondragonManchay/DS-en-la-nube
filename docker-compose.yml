@@ -1,12 +1,12 @@
 version: '3-8'
 
 services:
-  nodejs:
+  dmondragon:
     build:
       context: .
       dockerfile: Dockerfile
-    image: nodejs
-    container_name: nodejs
+    image: dmondragon
+    container_name: dmondragon
     restart: unless-stopped
     env_file: .env
     environment:
