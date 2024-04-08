@@ -36,8 +36,7 @@ services:
     volumes:     
       - dbdata-mondragon:/data/db
     networks:
-        default:
-            name: app-network_mondragon
+      - app-network_mondragon
 networks:
     app-network_mondragon:
         driver: bridge
