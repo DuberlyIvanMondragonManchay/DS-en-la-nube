@@ -24,8 +24,8 @@ services:
       - app-network-mondragon
     command: ./wait-for.sh db:27017 -- /home/node/app/node_modules/.bin/nodemon app.js
 
-  db:
-    image: mongo:4.1.8-xenial
+  database_dmondragon:
+    image: mongo
     container_name: db_dmondragon
     restart: unless-stopped
     env_file: .env
@@ -36,10 +36,11 @@ services:
       - dbdata-mondragon:/data/db
     networks:
       - app-network-mondragon
+
 networks:
-    app-network-mondragon:
-        driver: bridge
+  app-network-mondragon:
+    driver: bridge
 
 volumes:
-    dbdata-mondragon:
-    node_modules: 
+  dbdata-mondragon:
+  node_modules:
